@@ -1,0 +1,67 @@
+.tbl-content-col {
+	    padding-top: 15px !important;
+}
+
+table{counter-reset:section;}
+.count:before
+{
+	counter-increment:section;
+	content:counter(section);
+}
+
+body {
+	background-color: #ffffff !important;
+}
+
+.scoreBoard {
+	border: 1px gray solid;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.scoreNum {
+	font-weight: 500;
+	font-size: 100px;
+}
+
+.nameArea {
+border-top: 1px gray solid;
+}
+
+.examinerName {
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.titleArea {
+ font-weight: lighter;
+	font-size: 100px;
+}
+
+.textCenter {
+padding-top: 50px;
+ text-align: center;
+ width: 100%;
+}
+
+.btnReset {
+	margin-top: 20px;
+	width: 100%;
+}
+
+.diemtrungbinhArea {
+	border: 1px #3c0f0f solid;
+	   border-radius: 5px;
+	   text-align: center;
+	   margin-top: 20px;
+	   background-color: cornsilk;
+}
+
+.dtbLabel_text {
+	margin-top: 10px;
+   margin-bottom: 10px;
+}
+.dtbScore_text {
+	   font-weight: 500;
+	   font-size: 100px;
+}

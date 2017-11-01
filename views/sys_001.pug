@@ -1,0 +1,35 @@
+extends particulars/layout.pug
+block stylesheetFiles
+    link(href='css/sys_001.css', rel='stylesheet')
+block pagecontent
+    .full-screem-wrap
+      .container
+        .row
+          .textCenter
+            label.titleArea Điểm số của giám khảo
+        if users != null
+        .row
+          each user in users
+            .col-lg-3
+              .scoreBoard
+                .scoreArea
+                  label.scoreNum #{user.score}
+                .nameArea
+                  h2.examinerName
+                    | #{user.name}
+
+        .row.justify-content-center
+          .col-lg-3
+            .diemtrungbinhArea
+              .dtbLabel
+                h2.dtbLabel_text
+                  | Điểm Trung Bình
+              .dtbScore
+                label.dtbScore_text #{dtb}
+        
+        .row
+          .btnReset
+            button.btn.btn-primary.btn-lg.btn-block(type='button')#btnReset Reset Score
+
+block ScriptFiles
+    script(src='js/sys_001.js')
