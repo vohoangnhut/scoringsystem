@@ -26,9 +26,10 @@ app.set('port', process.env.PORT || 9999)
 
 const server = app.listen(app.get('port'), function(){console.log(`app is running on port ${app.get('port')}`)})
 
-const socket = io(server);
+const socketIO = io(server);
+app.io = socketIO;
 /////SOCKET
-socket.on('connection', function(socket){
+socketIO.on('connection', function(socket){
     app.socket = socket;
     socket.on('channel_01', data => {
         //console.log(data);

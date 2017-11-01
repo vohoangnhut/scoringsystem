@@ -53,7 +53,7 @@ module.exports = (app) => {
             }
         }
 
-        app.socket.emit('channel_01', {mess: 'Reload Page'});
+        app.io.emit('channel_01', {mess: 'Reload Page'});
         dimtrungbinh = tinhDTB();
         res.status(200).json({mess: 'OK'});
     }
@@ -63,7 +63,7 @@ module.exports = (app) => {
             userAndScore[i].score = 0;
             dimtrungbinh = 0;
         }
-        app.socket.emit('channel_01', {mess: 'Reload Page'});
+        app.io.emit('channel_01', {mess: 'Reload Page'});
         res.status(200).json({mess: 'OK'});
     }
 
