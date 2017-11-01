@@ -2,7 +2,7 @@
 // const router = express.Router()
 module.exports = (app) => {
     app.route('/').get((req,res) => {
-        res.render('HOME')
+        res.render('index')
     })
 
     /**
