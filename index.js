@@ -5,11 +5,12 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser')
 const session = require('express-session');
 const expressValidator = require('express-validator');
+const serveStatic = require('serve-static')
 const app = express();
 const io = require('socket.io');
 
 
-app.use(express.static(path.join(__dirname,'public'),{maxAge: 0}))//315360000 }))
+app.use(serveStatic(path.join(__dirname,'public'),{maxAge: 0}))//315360000 }))
 
 app.set('views',path.join(__dirname, 'views'))
 app.set('view engine', 'pug')
@@ -17,13 +18,6 @@ app.set('view engine', 'pug')
 app.use(bodyParser.urlencoded({ extended: false })) // parse application/x-www-form-urlencoded
 app.use(bodyParser.json()) // parse application/json
 app.use(cookieParser());
-
-// Express Session
-app.use(session({
-    secret: 'secret',
-    saveUninitialized: true,
-    resave: true
-}));
 
 //Set router //Router o day =)) 
 require('./routers')(app)
