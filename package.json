@@ -4,7 +4,8 @@
   "description": "scoring system",
   "main": "index.js",
   "scripts": {
-    "test": "nodemon index.js"
+    "test": "nodemon index.js",
+     "start": "node index.js"
   },
   "author": "nhutvo",
   "license": "ISC",
