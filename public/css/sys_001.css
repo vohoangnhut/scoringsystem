@@ -19,6 +19,11 @@ body {
 	text-align: center;
 }
 
+.scoreArea, .dtbScore {
+	margin-top: -20px;
+    margin-bottom: -20px;
+}
+
 .scoreNum {
 	font-weight: 500;
 	font-size: 100px;
@@ -26,6 +31,7 @@ body {
 
 .nameArea {
 border-top: 1px gray solid;
+min-height: 81px;
 }
 
 .examinerName {
@@ -34,12 +40,12 @@ margin-bottom: 10px;
 }
 
 .titleArea {
- font-weight: lighter;
-	font-size: 100px;
+    font-weight: lighter;
+    font-size: 70px;
+
 }
 
 .textCenter {
-padding-top: 50px;
  text-align: center;
  width: 100%;
 }
@@ -64,4 +70,18 @@ padding-top: 50px;
 .dtbScore_text {
 	   font-weight: 500;
 	   font-size: 100px;
+}
+
+.jumbotron-custom {
+	background-image: url('../img/png.png');
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+.title-name {
+    margin-top: -45px;
+    padding-bottom: 50px;
+    margin-left: 50px;
+    font-size: 60px;
+    color: darkgoldenrod !important;
 }

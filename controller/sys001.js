@@ -1,9 +1,10 @@
 //e co cai mang nay
 let userAndScore = [
-    { id: 1 , name: 'Giáo Khảo 1', score : 0 },
-    { id: 2 , name: 'Giáo Khảo 2', score : 0 },
+    { id: 1 , name: 'Lê Văn Sơn', score : 0 },
+    { id: 2 , name: 'Võ Hoàng Nhựt', score : 0 },
     { id: 3 , name: 'Giáo Khảo 3', score : 0 },
     { id: 4 , name: 'Giáo Khảo 4', score : 0 },
+    { id: 5 , name: 'Giáo Khảo 5', score : 0 },
 ];
 
 let dimtrungbinh = 0;

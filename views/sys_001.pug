@@ -4,13 +4,15 @@ block stylesheetFiles
 block pagecontent
     .full-screem-wrap
       .container
+        .jumbotron.jumbotron-fluid.jumbotron-custom
+          h1.title-name MẦN NON 15
         .row
           .textCenter
             label.titleArea Điểm số của giám khảo
         if users != null
-        .row
+        .row.justify-content-center
           each user in users
-            .col-lg-3
+            .col-md-2
               .scoreBoard
                 .scoreArea
                   label.scoreNum #{user.score}
